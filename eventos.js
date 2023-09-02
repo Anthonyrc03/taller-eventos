@@ -5,3 +5,8 @@ document.querySelector('.btn').addEventListener('click', () => {
 function saludar() {
     alert("Hola!")
 }
+
+document.querySelector('button').addEventListener('click', (event) => {
+    event.stopPropagation(); // Detiene la propagación del evento click
+    alert("Hola!");
+});
